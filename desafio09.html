@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 09</title>
+</head>
+<body>
+    <h3>A partir do seguinte vetor:</h3>
+    <pre>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        Preencha uma lista (&lt;ul&gt;) no HTML com os itens da seguinte forma:
+            ● Diego
+            ● Gabriel
+            ● Lucas
+    </pre>
+    <div class="title"></div>
+    <div class="list"></div>
+    
+    <script>
+
+        let nomes = ["Diego", "Gabriel", "Lucas"];
+
+        let ul = document.createElement('ul');
+
+        function insertLi(listText){
+
+            let list = document.querySelector('.list');
+            let li = document.createElement('li');
+            
+            let text = document.createTextNode(listText);
+            li.appendChild(text);
+            ul.appendChild(li);
+            list.appendChild(ul);
+        }
+
+        let title = document.querySelector('.title');
+        let resultado = document.createElement('h3');
+        let textTitle = document.createTextNode('Lista inserida Via Javascript');
+        resultado.appendChild(textTitle);
+        title.appendChild(resultado);
+
+        for(let i =0; i < nomes.length; i++){            
+            insertLi(nomes[i]);             
+        }
+
+    </script>
+</body>
+</html>
