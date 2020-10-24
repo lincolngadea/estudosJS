@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    <h2>Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve aparecer na tela.</h2>
+
+    <div class="botao"></div>
+    
+   
+    <script>
+        let bt = document.querySelector('.botao');
+        let btn = document.createElement('button');
+        let info = document.createTextNode('Criar');
+        btn.setAttribute('type','button');
+        btn.appendChild(info);
+        bt.appendChild(btn);
+
+        btn.onclick = ()=>{
+            let elem = document.createElement('div');
+            elem.className = 'box';
+            console.log(elem);
+            // let box = document.querySelector('.box');
+            
+            elem.style.width = '100px';
+            elem.style.height = '100px';
+            elem.style.marginTop = '10px';
+            elem.style.backgroundColor = 'red';
+
+            bt.appendChild(elem);
+
+        };
+    </script>
+
+</body>
+</html>

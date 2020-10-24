@@ -27,7 +27,8 @@ function insertLi(link,listText){
 insertLi("/desafio01.html",'Desafio 01');
 insertLi("/desafio02.html",'Desafio 02');
 insertLi("/desafio03.html",'Desafio 03');
-insertLi("/desafio04.html",'Desafio 04');
+insertLi("/desafio04.html",'Desafio 04');   
 insertLi("/desafio05.html",'Desafio 05');
 insertLi("/desafio06.html",'Desafio 06');
+insertLi("/desafio07.html",'Desafio 07');
 
