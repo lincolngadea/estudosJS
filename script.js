@@ -31,4 +31,5 @@ insertLi("/desafio04.html",'Desafio 04');
 insertLi("/desafio05.html",'Desafio 05');
 insertLi("/desafio06.html",'Desafio 06');
 insertLi("/desafio07.html",'Desafio 07');
+insertLi("/desafio08.html",'Desafio 08');
 
